@@ -1,0 +1,37 @@
+.stock-branch {
+  .anim-label {
+    position: relative;
+    input {
+      transition: 0.1s ease;
+      outline: none;
+      &:not(:placeholder-shown), &:focus{
+      border: 1px solid black;
+        +label {
+          position: absolute;
+          transform: translateY(-2rem);
+          left: 4rem;
+          background-color: #fff;
+          padding: 0 1%;
+          color: black;
+        }
+      }
+    }
+    label {
+      position: absolute;
+      color: lightgrey;
+      top: 3rem;
+      background-color: transparent;
+      user-select: none;
+      pointer-events: none;
+      left: 4rem;
+      transition: 0.2s ease;
+    }
+  }
+  .form-input {
+    padding: 1rem 2rem;
+    margin: 2rem 2rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+  }
+}
